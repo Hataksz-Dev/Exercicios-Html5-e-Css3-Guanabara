@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'copyduck';
+            src: url('Copyduck.otf') format('opentype'), url(Copyduck.ttf) format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            /* 
+                    TIPOS DE format()
+                    - opentype (otf)
+                    - truetype (ttf)
+                    - embedde-opentype
+                    - truetype-aat (Apple Advanced Typography)
+                    -svg
+                    
+            
+            */
+        }
+        body{
+            font-family:'copyduck' ,Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: 'copyduck','Times New Roman', Times, serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque omnis laboriosam aliquid harum, ipsam reiciendis enim dolor commodi tenetur voluptate minima fuga quisquam fugit odit, laudantium ex atque? Et, dolorem?</p>
+    
+</body>
+</html>

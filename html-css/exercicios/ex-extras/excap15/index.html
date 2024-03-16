@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Seletores</title>
+    <style>
+        body{
+            font: normal 1em Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-size: 2em;
+            color: darkgreen;
+        }
+        h2{
+            color: green;
+        }
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            color: red;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        #titulo-principal{
+            background-color: darkgreen;
+            color: white;
+            text-align: center;
+        }
+
+        .especial:hover {
+            color: white;
+            background-color: black;
+            text-decoration: none;
+        }
+
+        .especial::before {
+            content: '»';
+            font-weight: lighter;
+        }
+        
+        .especial::after {
+            content: '«';
+            font-weight: lighter;
+        }
+
+        .topico{
+            text-align: right;
+        }
+
+        .texto{
+            text-align: justify;
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo-principal">Aprenda Desenvolvimento web</h1>
+    <h1>Aprenda HTML</h1>
+    <h2 class="topico">Semântica Web</h2>
+    <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta amet, cumque quod commodi excepturi ipsum magnam saepe doloremque? Necessitatibus quos quasi rem repellat illo itaque corrupti earum doloribus? Est, voluptas?</p>
+    <h1>Aprenda CSS</h1>
+    <h2 class="topico">Estilos Web</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel nam, quaerat, magni ratione blanditiis magnam pariatur molestias aut aspernatur voluptatem tempora. Animi modi assumenda quasi id excepturi, sint et? Numquam.</p>
+
+    <h2>Pseudo-classes e pseudo Elementos</h2>
+
+    <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor
+    após um sinal de dois pontos e especificam um estado especial de um elemento.
+    Existem várias pseudo-classes para estilos, podemos
+    citar :hover, :visited, :active, :checked, :empty e :focus.
+    Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um
+    seletor após dois sinais de dois pontos e permitem que você formate um pedaço
+    específico do elemento referenciado. Os principais pseudo-elementos usados nas CSS
+    são ::before, ::after, ::first-letter, ::first-line.
+    Vamos começar criando um exemplo bem simples e bastante usado para exemplificar
+    o uso de pseudo-classes e pseudo-elementos: a personalização de links.</p>
+
+    <p>
+        Para aprender HTML5 e CSS3, acesse o 
+        <a href="https://gustavoguanabara.github.io" target="_blank" rel="external">
+            Github do Guanabara
+        </a>
+    </p>
+    <p>Se quiser conhecer mais sobre os padrões, visite o site do 
+        <a href="https://www.w3c.br" target="_blank" rel="external">Escritório do W3C no Brasil</a>
+    </p>
+    <p>Para acompanhar os cursos, acesse o 
+        <a href="https://www.youtube.com/cursoemvideo/" target="_blank" rel="external" class="especial">
+            Canal do Curso em Vídeo
+        </a>
+    </p>
+
+    <h2>Mais um Exemplo</h2>
+
+    <h3>Conteúdo Especial</h3>
+    <div>
+        passe o mouse aqui
+        <p>SURPRESAAAA!</p>
+    </div>
+    <p>Veja o conteúdo oculto aparecendo</p>
+    
+</body>
+</html>
